@@ -1,0 +1,33 @@
+
+.container{
+	width: 400px;
+	height:200px;
+	margin-left: 31%;
+	text-align: center;
+}
+.tiles{
+	display: inline-block;
+	text-align: center;
+	margin-left: 35%;
+}
+.box{
+    width:100px;
+    height:100px;
+    
+}
+
+.x{
+    border-left:4px solid black;
+    border-right:4px solid black;
+}
+
+.y{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+}
+
+.box:hover{
+	background-color: skyblue;
+}
+
+
