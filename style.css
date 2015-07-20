@@ -1,16 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
 
 .nav{
-
+	width:350px;
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 37%;
+}
+hr{
+	border-top: 2px solid #fff0f5;
 }
 h1{
-	font-size: 350%;
+	font-size: 300%;
     font-weight: bold;
     font-family: 'Luckiest Guy', cursive;
 }
 
 h2{
-	font-size: 350%;
+	font-size: 300%;
     font-weight: bold;
     color: orangered;
     font-family: 'Luckiest Guy', cursive;
@@ -18,7 +25,7 @@ h2{
 
 .container{
 	width: 350px;
-	height: 700px;
+	height: 650px;
 	margin-left:auto;
 	text-align: center;
 	border-radius: 52px 52px 52px 52px;
@@ -34,6 +41,12 @@ h2{
 
 }
 
+.modal{
+	font-family: 'Luckiest Guy';
+	font-weight: lighter;
+	text-align: center;
+}
+
 
 .tiles{
 	display: inline-block;
@@ -43,11 +56,11 @@ h2{
 	text-align: top;
 }
 .box{
-    width:100px;
-    height:100px;
+    width:80px;
+    height:80px;
     font-family: 'Luckiest Guy', cursive;
     text-align: top;
-    font-size: 600%;
+    font-size: 500%;
     font-weight: bold;
 
     
