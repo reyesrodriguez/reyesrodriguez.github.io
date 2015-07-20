@@ -18,7 +18,6 @@ $(b).find('td').on('click', function(){
               $(this).css('color', 'midnightblue');
               wins('O');
             }
-      
           turns++;
           
       });
@@ -78,7 +77,7 @@ $('#restart').on('click', function(){
 $('td').click(function() {
     $(this).addClass("floating");
   });
-
+$('#pop').popover('trigger click');
 
 
 

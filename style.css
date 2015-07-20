@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
 
 .nav{
-	
+
 }
 h1{
 	font-size: 350%;
@@ -10,14 +10,14 @@ h1{
 }
 
 h2{
-	font-size: 250%;
+	font-size: 350%;
     font-weight: bold;
     color: orangered;
     font-family: 'Luckiest Guy', cursive;
 }
 
 .container{
-	width: 400px;
+	width: 350px;
 	margin-left:auto;
 	text-align: center;
 	border-radius: 52px 52px 52px 52px;
@@ -32,16 +32,18 @@ h2{
 
 
 }
+
+
 .tiles{
 	display: inline-block;
 	margin-left: auto;
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	text-align: top;
 }
 .box{
-    width:125px;
-    height:125px;
+    width:120px;
+    height:120px;
     font-family: 'Luckiest Guy', cursive;
     text-align: top;
     font-size: 600%;
