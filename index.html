@@ -2,23 +2,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>O X O X</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">	
+<link rel="stylesheet" href="animation.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <html>
-<body>		  
-		  <section class="container">
-		  	<h1>TiC TaC ToE</h1>
+<body>	
+<div nav>
+	
+</div>
+<div class="container">	  
+		   
+		    <div class="btns">
+		  	<h1>TiC-TaC-ToE</h1>
 
-		  			<button type="button" class="btn btn-danger" id="container" data-toggle="popover" title="Popover title" data-content="Tic Tac Toe is a two-player game where the first player to connect a line of pieces from one side or corner of the board to the other wins. With perfect play, the game cannot be won." >How To Play?</button>
-		  		</br>
+
 		  			<h2 class="input"></h2>
-		  			 <button id="restart">Restart</button>
-		  			</section>
+		  			<button type="button" id="restart" class="btn btn-success" >Play Again</button>
+
+		  			</div>
 							  	<div class="tiles">	
 								<table>
 	          <tr id="row1">
-	            <td id="1" class="box"></td>
+	            <td id="1" class="box" class="slideUp"></td>
 	            <td id="2" class="box x"></td>
 	            <td id="3" class="box"></td>
 	          </tr>
@@ -34,9 +41,18 @@
 	          </tr>
 	        </table>
 							</div>
-
+						</br>
+						<div class="btns">
+					<button type="button" id="pop" class="btn btn-danger" data-toggle="popover" title="Popover title" data-content="Tic Tac Toe is a two-player game where the first player to connect a line of pieces from one side or corner of the board to the other wins. With perfect play, the game cannot be won." >How To Play?</button>
+		  		</br>
+					</div>
+			
+</div>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 
 </html>

@@ -8,14 +8,17 @@ var b = $('.tiles');
 // [159] diagonal left to right  [357] diagonal right to left
 $(b).find('td').on('click', function(){
             if (turns % 2 === 0){
-              $(this).text('X');
+              $(this).text('x');
+              $(this).css('color', 'firebrick');
               wins('X');
+      }
 
-            } else {
-           //player 2's turn (O)
-              $(this).text('O');
+             else {
+              $(this).text('o');
+              $(this).css('color', 'midnightblue');
               wins('O');
             }
+      
           turns++;
           
       });
@@ -24,51 +27,66 @@ function wins(player){
   // row I
   if($(b).find('#1').text() !== '' && $(b).find('#1').text() == $(b).find('#2').text() && 
     $(b).find('#1').text() == $('#3').text()){
-        alert('game over! ' + player + ' is the winner!');
+        // alert('game over! you win!')
+        $('.input').text(player  + ' Wins!');
         }
   // row II
   else if($(b).find('#4').text() !== '' && $(b).find('#4').text() == $(b).find('#5').text() && 
     $(b).find('#4').text() == $('#6').text() ){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
   // row III
   else if($(b).find('#7').text() !== '' && $(b).find('#7').text() == $(b).find('#8').text() && 
     $(b).find('#7').text() == $('#9').text()){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
 
 
   // column I
   else if($(b).find('#1').text() !== '' && $(b).find('#1').text() == $(b).find('#4').text() && 
     $(b).find('#1').text() == $('#7').text()){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
   // column II
   else if($(b).find('#2').text() !== '' && $(b).find('#2').text() == $(b).find('#5').text() && 
     $(b).find('#2').text() == $('#8').text() ){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
   // column III
   else if($(b).find('#3').text() !== '' && $(b).find('#3').text() == $(b).find('#6').text() && 
     $(b).find('#3').text() == $('#9').text()){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
 
   // diagonal <----- to ------>
    else if($(b).find('#1').text() !== '' && $(b).find('#1').text() == $(b).find('#5').text() && 
     $(b).find('#1').text() == $('#9').text()){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
   // diagonal ------> to <-------
   else if($(b).find('#3').text() !== '' && $(b).find('#3').text() == $(b).find('#5').text() && 
     $(b).find('#3').text() == $('#7').text() ){
-        alert('game over! ' + player + ' is the winner!');
+        $('.input').text(player  + ' Wins!');
         }
-      }
+      };
 
 $('#restart').on('click', function(){
-    $('.box').text('');
-  })
+    $('td').text('');
+    $('.input').text('');
+ });
+
+$('td').click(function() {
+    $(this).addClass("floating");
+  });
+
+
+
+
+
+
+
+
+
 
 
 
