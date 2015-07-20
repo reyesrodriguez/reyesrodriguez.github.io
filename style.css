@@ -5,17 +5,20 @@
 	font-family: 'Luckiest Guy', cursive;
 	font-weight: lighter;
 	text-align: left;
-	margin-left: 37%;
-	margin-right: auto;
+	margin:auto;
+	
 }
 .line{
 	border-top: 2px solid #fff0f5;
+	margin-top: 5px;
 }
 h1{
 	font-size: 300%;
     font-weight: bold;
     font-family: 'Luckiest Guy', cursive;
+    
 }
+
 
 h2{
 	font-size: 300%;
@@ -27,13 +30,14 @@ h2{
 .container{
 	width: 350px;
 	height: 650px;
-	margin-left:auto;
+	margin:auto;
 	text-align: center;
 	border-radius: 52px 52px 52px 52px;
 	-moz-border-radius: 52px 52px 52px 52px;
 	-webkit-border-radius: 52px 52px 52px 52px;
 	border: 8px solid #141414;
 	padding-top:20px;
+	padding-bottom: 10px;
 }
 .btns {
 	text-align: center;

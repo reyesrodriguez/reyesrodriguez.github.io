@@ -6,21 +6,23 @@ var b = $('.tiles');
 // [123], [456], [789] row 1 2 3
 // [147], [258], [369] coumns 1 2 3
 // [159] diagonal left to right  [357] diagonal right to left
-$(b).find('td').on('click', function(){
-            if (turns % 2 === 0){
+
+$(b).find('td').one('click', function(){
+            if (turns % 2 ){
               $(this).text('x');
               $(this).css('color', 'firebrick');
               wins('X');
-      }
+        }
 
-             else {
+              else {
               $(this).text('o');
               $(this).css('color', 'midnightblue');
               wins('O');
-            }
+        }
           turns++;
           
       });
+
 
 function wins(player){
   // row I
@@ -70,8 +72,7 @@ function wins(player){
       };
 
 $('#restart').on('click', function(){
-    $('td').text('');
-    $('.input').text('');
+    location.reload();
  });
 
 $('td').click(function() {
@@ -79,7 +80,10 @@ $('td').click(function() {
   });
 $('#pop').popover('trigger click');
 
-
+// $('h5').on('click', function(){
+//     $('td').text('');
+//     $('.input').text('');
+//  });
 
 
 
