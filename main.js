@@ -72,7 +72,7 @@ function wins(player){
       };
 
 $('#restart').on('click', function(){
-    location.reload();
+    $('td').text('');
  });
 
 $('td').click(function() {
